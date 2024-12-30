@@ -13,7 +13,7 @@ return {
                 cmp = true,
                 gitsigns = true,
                 telescope = true,
-                neotree = true,
+                neotree = false,
                 which_key = true,
                 dashboard = true,
                 bufferline = true,
