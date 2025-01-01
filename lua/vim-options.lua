@@ -9,8 +9,8 @@ end)
 -- Basic settings
 vim.opt.number = true
 vim.opt.relativenumber = true
---vim.api.nvim_set_hl(0, 'LineNr', { fg = '#ff0000' }) -- Line number color
---vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#00ff00' }) -- Current line number color
+-- vim.api.nvim_set_hl(0, 'LineNr', { fg = '#ff0000' }) -- Line number color
+-- vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#00ff00' }) -- Current line number color
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
@@ -26,7 +26,6 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<C-z>', '<Nop>')
-vim.keymap.set('n', '<leader>sh', ':ClangdSwitchSourceHeader<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
